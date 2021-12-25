@@ -2,81 +2,489 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Paul Shaw</title>
-        <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
         <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
             rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+            integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+            crossorigin="anonymous"
         />
         <link
             rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+            integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+            integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
         <link rel="stylesheet" href="css/style.css" />
+        <title>Paul J Shaw</title>
     </head>
+
     <body>
-        <header>
-            <div class="container">
-                <h1 id="home">Paul Shaw</h1>
-                <a href="#">&lt; Download my CV &gt;</a>
+        <!-- START HERE -->
+        <div class="container">
+            <header id="main-header">
+                <div class="row no-gutters">
+                    <div class="col-lg-4 col-md-5">
+                        <img src="img/person4.jpg" alt="Picture of person" />
+                    </div>
+                    <div class="col-lg-8 col-md-7">
+                        <div class="d-flex flex-column">
+                            <div class="p-5 bg-dark text-white">
+                                <div
+                                    class="
+                                        d-flex
+                                        flex-row
+                                        justify-content-between
+                                        align-items-center
+                                    "
+                                >
+                                    <h1 class="display-4">Paul J Shaw</h1>
+
+                                    <div>
+                                        <a
+                                            href="http://linkedin.com"
+                                            target="_blank"
+                                            class="text-white"
+                                        >
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a
+                                            href="http://github.com"
+                                            target="_blank"
+                                            class="text-white"
+                                        >
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4 bg-black">Web Developer</div>
+                            <div>
+                                <div
+                                    class="
+                                        d-flex
+                                        flex-row
+                                        text-white
+                                        align-items-lg-stretch
+                                        text-center
+                                    "
+                                >
+                                    <div
+                                        class="port-item p-4 bg-grey-4"
+                                        data-toggle="collapse"
+                                        data-target="#home"
+                                    >
+                                        <i
+                                            class="fas fa-home fa-2x d-block"
+                                        ></i>
+                                        <span class="d-none d-sm-block"
+                                            >Home</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="port-item p-4 bg-grey-3"
+                                        data-toggle="collapse"
+                                        data-target="#skills"
+                                    >
+                                        <i
+                                            class="fas fa-cogs fa-2x d-block"
+                                        ></i>
+                                        <span class="d-none d-sm-block"
+                                            >Skills</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="port-item p-4 bg-grey-2"
+                                        data-toggle="collapse"
+                                        data-target="#projects"
+                                    >
+                                        <i
+                                            class="
+                                                fas
+                                                fa-folder-open fa-2x
+                                                d-block
+                                            "
+                                        ></i>
+                                        <span class="d-none d-sm-block"
+                                            >Projects</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="port-item p-4 bg-grey-1"
+                                        data-toggle="collapse"
+                                        data-target="#contact"
+                                    >
+                                        <i
+                                            class="
+                                                fas
+                                                fa-envelope fa-2x
+                                                d-block
+                                            "
+                                        ></i>
+                                        <span class="d-none d-sm-block"
+                                            >Contact Me</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- HOME -->
+            <div id="home" class="collapse show">
+                <div class="card card-body bg-grey-4 text-white py-5">
+                    <h2>Welcome to my page</h2>
+                    <p class="lead">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Est, ab.
+                    </p>
+                </div>
             </div>
-        </header>
-        <nav>
-            <div class="container">
-                <ul>
-                    <li class="nav-item"><a href="#home">Home</a></li>
-                    <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a href="#skills">Skills</a></li>
-                    <li class="nav-item"><a href="#contact">Contact Me</a></li>
-                </ul>
+
+            <!-- SKILLS -->
+            <div id="skills" class="collapse">
+                <div class="card card-body bg-grey-3 text-white py-5">
+                    <h2>My Skills</h2>
+                    <p class="lead">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Est, ab.
+                    </p>
+                </div>
+                <div class="card card-body py-5">
+                    <h3>My Skills</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Saepe modi maxime pariatur, sed laborum non.
+                    </p>
+                    <hr />
+                    <h4>HTML 5</h4>
+                    <div class="progress mb-3">
+                        <div
+                            class="progress-bar bg-success"
+                            style="width: 100%"
+                        ></div>
+                    </div>
+                    <h4>CSS 3</h4>
+                    <div class="progress mb-3">
+                        <div
+                            class="progress-bar bg-success"
+                            style="width: 90%"
+                        ></div>
+                    </div>
+                    <h4>JavaScript</h4>
+                    <div class="progress mb-3">
+                        <div
+                            class="progress-bar bg-success"
+                            style="width: 80%"
+                        ></div>
+                    </div>
+                    <h4>React</h4>
+                    <div class="progress mb-3">
+                        <div
+                            class="progress-bar bg-success"
+                            style="width: 40%"
+                        ></div>
+                    </div>
+                    <h4>Python</h4>
+                    <div class="progress mb-3">
+                        <div
+                            class="progress-bar bg-success"
+                            style="width: 40%"
+                        ></div>
+                    </div>
+                    <h4>MySQL</h4>
+                    <div class="progress mb-3">
+                        <div
+                            class="progress-bar bg-success"
+                            style="width: 40%"
+                        ></div>
+                    </div>
+                    <h4>MongoDB</h4>
+                    <div class="progress mb-3">
+                        <div
+                            class="progress-bar bg-success"
+                            style="width: 40%"
+                        ></div>
+                    </div>
+                </div>
             </div>
-        </nav>
-        <main>
-            <div class="container">
-                <section id="portfolio">
-                    <h2>Portfolio</h2>
+
+            <!-- PROJECTS -->
+            <div id="projects" class="collapse">
+                <div class="card card-body bg-grey-2 text-white py-5">
+                    <h2>My Projects</h2>
+                    <p class="lead">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Est, ab.
+                    </p>
+                </div>
+                <div class="card card-body py-5">
+                    <h3>What Have I Built?</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolor, consectetur quasi. Praesentium, assumenda
-                        molestiae aspernatur amet nihil fuga voluptates incidunt
-                        doloribus voluptate earum quis! Magnam odit eaque quos
-                        tenetur hic esse aut illum perspiciatis temporibus
-                        officiis. Quae reiciendis laudantium recusandae.
+                        Corrupti.
                     </p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 d-flex justify-content-center">
+                                <div class="card" style="width: 18rem">
+                                    <img
+                                        src="..."
+                                        class="card-img-top"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h5 class="card-title">JS Bank App</h5>
+                                        <p class="card-text">
+                                            Some quick example text to build on
+                                            the card title and make up the bulk
+                                            of the card's content.
+                                        </p>
+                                        <a href="#" class="btn btn-primary"
+                                            >Go somewhere</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 d-flex justify-content-center">
+                                <div class="card" style="width: 18rem">
+                                    <img
+                                        src="..."
+                                        class="card-img-top"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pig Game</h5>
+                                        <p class="card-text">
+                                            Some quick example text to build on
+                                            the card title and make up the bulk
+                                            of the card's content.
+                                        </p>
+                                        <a href="#" class="btn btn-primary"
+                                            >Go somewhere</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 d-flex justify-content-center">
+                                <div class="card" style="width: 18rem">
+                                    <img
+                                        src="..."
+                                        class="card-img-top"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">
+                                            Some quick example text to build on
+                                            the card title and make up the bulk
+                                            of the card's content.
+                                        </p>
+                                        <a href="#" class="btn btn-primary"
+                                            >Go somewhere</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 d-flex justify-content-center">
+                                <div class="card" style="width: 18rem">
+                                    <img
+                                        src="..."
+                                        class="card-img-top"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">
+                                            Some quick example text to build on
+                                            the card title and make up the bulk
+                                            of the card's content.
+                                        </p>
+                                        <a href="#" class="btn btn-primary"
+                                            >Go somewhere</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 d-flex justify-content-center">
+                                <div class="card" style="width: 18rem">
+                                    <img
+                                        src="..."
+                                        class="card-img-top"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">
+                                            Some quick example text to build on
+                                            the card title and make up the bulk
+                                            of the card's content.
+                                        </p>
+                                        <a href="#" class="btn btn-primary"
+                                            >Go somewhere</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 d-flex justify-content-center">
+                                <div class="card" style="width: 18rem">
+                                    <img
+                                        src="..."
+                                        class="card-img-top"
+                                        alt="..."
+                                    />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">
+                                            Some quick example text to build on
+                                            the card title and make up the bulk
+                                            of the card's content.
+                                        </p>
+                                        <a href="#" class="btn btn-primary"
+                                            >Go somewhere</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTACT -->
+
+            <div id="contact" class="collapse">
+                <div class="card card-body bg-grey-1 text-white py-5">
+                    <h2>Contact</h2>
+                    <p class="lead">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Est, ab.
+                    </p>
+                </div>
+                <div class="card card-body py-5">
+                    <h3>Get In Touch</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Illo minus facere, debitis, quos beatae numquam
-                        eligendi suscipit ab nam quibusdam nisi soluta modi
-                        aperiam molestiae.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Doloremque!
                     </p>
-                </section>
-                <section id="skills">
-                    <h2>Skills</h2>
-                    <ul>
-                        <li class="skill">HTML5</li>
-                        <li class="skill">CSS</li>
-                        <li class="skill">JavasCript</li>
-                        <li class="skill">React</li>
-                        <li class="skill">Python</li>
-                        <li class="skill">PHP</li>
-                    </ul>
-                </section>
-                <section id="contact">
-                    <h2>Contact me</h2>
-                </section>
+                    <form action="">
+                        <div class="form-group">
+                            <div class="input-group input-group-lg">
+                                <div class="input-group-prepend">
+                                    <span
+                                        class="
+                                            input-group-text
+                                            bg-grey-1
+                                            text-white
+                                        "
+                                    >
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                </div>
+                                <input
+                                    type="text"
+                                    class="form-control bg-dark text-white"
+                                    placeholder="Name"
+                                />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group input-group-lg">
+                                <div class="input-group-prepend">
+                                    <span
+                                        class="
+                                            input-group-text
+                                            bg-grey-1
+                                            text-white
+                                        "
+                                    >
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </div>
+                                <input
+                                    type="email"
+                                    class="form-control bg-dark text-white"
+                                    placeholder="Email"
+                                />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group input-group-lg">
+                                <div class="input-group-prepend">
+                                    <span
+                                        class="
+                                            input-group-text
+                                            bg-grey-1
+                                            text-white
+                                        "
+                                    >
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </span>
+                                </div>
+                                <textarea
+                                    class="form-control bg-dark text-white"
+                                    placeholder="Message"
+                                >
+                                </textarea>
+                            </div>
+                        </div>
+                        <input
+                            type="submit"
+                            value="Submit"
+                            class="btn btn-grey-1 btn-block btn-lg"
+                        />
+                    </form>
+                </div>
             </div>
-        </main>
-        <footer>
-            <div class="container">
-                <p>&copy; 2021 Paul J Shaw. All rights reserved</p>
-            </div>
-        </footer>
+
+            <!-- FOOTER -->
+            <footer id="main-footer" class="p-5 bg-dark text-white">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a
+                            href="resources/CV.pdf"
+                            class="btn btn-outline-light"
+                            download
+                            ><i class="fas fa-cloud"></i> Download CV</a
+                        >
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+            crossorigin="anonymous"
+        ></script>
+
+        <script>
+            // Get the current year for the copyright
+            $('#year').text(new Date().getFullYear())
+
+            $('.port-item').click(function () {
+                $('.collapse').collapse('hide')
+            })
+        </script>
     </body>
 </html>
