@@ -39,12 +39,66 @@ body {
     color: white;
 }
 
+.btn-grey-3 {
+    background-color: #30363c;
+    color: white;
+}
+
+.btn-grey-3:hover {
+    background-color: #414a53;
+    color: white;
+}
+
 @media (min-width: 1199px) {
     .port-item {
         padding: 3em !important;
     }
 }
 
-.row {
+.project-row {
     margin-bottom: 15px;
+}
+
+a.project {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    min-height: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.2rem;
+}
+
+a.movie-fight {
+    background-color: #01b288;
+}
+
+a.movie-fight:hover {
+    background-color: #03ca9c;
+}
+
+a.jsbank {
+    background-color: #006a4c;
+}
+
+a.jsbank:hover {
+    background-color: #028b65;
+}
+
+a.clearview {
+    background-color: #305572;
+}
+
+a.clearview:hover {
+    background-color: #3e6e92;
+}
+
+a.piggame {
+    background-color: #242424;
+}
+
+a.piggame:hover {
+    background-color: #3d3d3d;
 }
