@@ -34,8 +34,17 @@ body {
     background-color: #444b53;
 }
 
+.bg-grey-4:hover {
+    background-color: #444b53;
+}
+
 .btn-grey-1 {
-    background-color: #111;
+    background-color: #111315;
+    color: white;
+}
+
+.btn-grey-1:hover {
+    background-color: #23272b;
     color: white;
 }
 
@@ -46,6 +55,10 @@ body {
 
 .btn-grey-3:hover {
     background-color: #414a53;
+    color: white;
+}
+
+.btn:hover {
     color: white;
 }
 
