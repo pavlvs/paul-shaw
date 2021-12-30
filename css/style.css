@@ -13,7 +13,6 @@ body {
 
 #main-header .port-item:hover {
     cursor: pointer;
-    opacity: 0.7;
 }
 
 .bg-black {
@@ -24,18 +23,33 @@ body {
 .bg-grey-1 {
     background-color: #111315;
 }
+
 .bg-grey-2 {
     background-color: #202327;
 }
+
 .bg-grey-3 {
     background-color: #30363c;
 }
+
 .bg-grey-4 {
     background-color: #444b53;
 }
 
-.bg-grey-4:hover {
-    background-color: #444b53;
+.home:hover {
+    background-color: #3e444b;
+}
+
+.skills:hover {
+    background-color: #22262b;
+}
+
+.projects:hover {
+    background-color: #1a1d20;
+}
+
+.contact:hover {
+    background-color: #070808;
 }
 
 .btn-grey-1 {
@@ -118,4 +132,8 @@ a.piggame {
 
 a.piggame:hover {
     background-color: #3d3d3d;
+}
+
+.card {
+    border-radius: 0;
 }
