@@ -21,13 +21,7 @@
             integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
             crossorigin="anonymous"
         />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
-            integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
+
         <link rel="stylesheet" href="css/style.css" />
         <title>Paul J Shaw</title>
     </head>
@@ -358,7 +352,10 @@
                         Lorem, ipsum dolor sit amet consectetur adipisicing
                         elit. Doloremque!
                     </p> -->
-                    <form action="">
+                    <form
+                        action="https://formspree.io/f/mdobkgyd"
+                        method="POST"
+                    >
                         <div class="form-group">
                             <div class="input-group input-group-lg">
                                 <div class="input-group-prepend">
@@ -374,8 +371,10 @@
                                 </div>
                                 <input
                                     type="text"
+                                    name="Name"
                                     class="form-control bg-dark text-white"
                                     placeholder="Name"
+                                    required
                                 />
                             </div>
                         </div>
@@ -394,8 +393,10 @@
                                 </div>
                                 <input
                                     type="email"
+                                    name="email"
                                     class="form-control bg-dark text-white"
                                     placeholder="Email"
+                                    required
                                 />
                             </div>
                         </div>
@@ -414,7 +415,9 @@
                                 </div>
                                 <textarea
                                     class="form-control bg-dark text-white"
+                                    name="Message"
                                     placeholder="Message"
+                                    required
                                 >
                                 </textarea>
                             </div>
