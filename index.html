@@ -124,6 +124,7 @@
                                         class="port-item p-4 bg-grey-1"
                                         data-toggle="collapse"
                                         data-target="#contact"
+                                        id="contactlink"
                                     >
                                         <i
                                             class="
@@ -355,6 +356,7 @@
                     <form
                         action="https://formspree.io/f/mdobkgyd"
                         method="POST"
+                        id="contactform"
                     >
                         <div class="form-group">
                             <div class="input-group input-group-lg">
@@ -371,6 +373,7 @@
                                 </div>
                                 <input
                                     type="text"
+                                    id="name"
                                     name="Name"
                                     class="form-control bg-dark text-white"
                                     placeholder="Name"
@@ -393,6 +396,7 @@
                                 </div>
                                 <input
                                     type="email"
+                                    id="email"
                                     name="email"
                                     class="form-control bg-dark text-white"
                                     placeholder="Email"
@@ -415,6 +419,7 @@
                                 </div>
                                 <textarea
                                     class="form-control bg-dark text-white"
+                                    id="message"
                                     name="Message"
                                     placeholder="Message"
                                     required
@@ -426,6 +431,8 @@
                             type="submit"
                             value="Submit"
                             class="btn btn-grey-1 btn-block btn-lg"
+                            id="btnSubmit"
+                            onclick="clearFields()"
                         />
                     </form>
                 </div>
@@ -465,5 +472,6 @@
                 $('.collapse').collapse('hide')
             })
         </script>
+        <script src="scripts/script.js"></script>
     </body>
 </html>
